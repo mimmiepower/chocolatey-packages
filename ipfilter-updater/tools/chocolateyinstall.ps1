@@ -1,1 +1,2 @@
-﻿Install-ChocolateyPackage "$env:chocolateyPackageName" 'msi' "MSIFASTINSTALL=1 DISABLEROLLBACK=1 /qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`"" "https://davidmoore.github.io/ipfilter/install/IPFilter.msi" -Checksum 'f048f18e2263e9ae909e7c8ab7a36e6bc19eeb0cc4aa9ec344606f7b86b5728a' -ChecksumType 'sha256'
+﻿Install-ChocolateyPackage "$env:chocolateyPackageName" 'msi' "MSIFASTINSTALL=1 DISABLEROLLBACK=1 /qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`"" "https://github.com/DavidMoore/ipfilter/releases/latest/download/IPFilter.msi" -Checksum '04912BBD35D80FC3BFEC34ED03350F13AC163940EE121DCA377B6EA1F856D62C
+' -ChecksumType 'sha256'
